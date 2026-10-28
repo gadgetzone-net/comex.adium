@@ -1,0 +1,282 @@
+
+/* ==========================================================================
+   Adium Design System — colors_and_type.css
+   Import this from any artifact to inherit the Adium brand foundations.
+   ========================================================================== */
+
+/* --- Font: Montserrat (brand) — self-hosted, full static weight family --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  /* ============================================================
+     COLOR — Brand
+     ============================================================ */
+  --adium-red:        #E6002D;   /* Brand primary — header bar, footer rule, CTAs, logo bg */
+  --adium-red-hover:  #C8002A;
+  --adium-red-press:  #A50022;
+  --adium-red-tint:   #FCE6EB;   /* For subtle backgrounds, table highlights */
+
+  --adium-slate:      #3D4759;   /* Brand secondary — slide bg, headings, body */
+  --adium-slate-2:    #525C70;   /* Softer slate for sub-heads */
+  --adium-slate-3:    #6B7384;   /* Muted body */
+  --adium-slate-ink:  #2A3142;   /* Strongest text on white */
+
+  --adium-ink:        #1F2533;   /* Hard ink (rare) */
+  --adium-white:      #FFFFFF;
+  --adium-off-white:  #F7F8FA;   /* Page bg alt */
+  --adium-line:       #E5E7EB;   /* Hairline border */
+  --adium-line-soft:  #EEF0F3;
+
+  /* ============================================================
+     COLOR — Data-viz / chart accents (from deck screenshots)
+     ============================================================ */
+  --chart-blue:    #2E5A8E;
+  --chart-orange:  #E08A4E;
+  --chart-green:   #5BAE6F;
+  --chart-green-soft: #C8E5CE;
+  --chart-red-soft:   #F8C9CF;
+  --chart-grid:    #C8CCD3;
+
+  /* ============================================================
+     COLOR — Semantic (foreground / background)
+     ============================================================ */
+  --fg-1: var(--adium-slate-ink);    /* primary body & headings on white */
+  --fg-2: var(--adium-slate-2);      /* secondary copy */
+  --fg-3: var(--adium-slate-3);      /* muted, captions */
+  --fg-on-red:   var(--adium-white);
+  --fg-on-slate: var(--adium-white);
+  --fg-link:     var(--adium-red);
+
+  --bg-1: var(--adium-white);        /* default surface */
+  --bg-2: var(--adium-off-white);    /* alt surface */
+  --bg-brand:    var(--adium-red);   /* hero red */
+  --bg-deep:     var(--adium-slate); /* deck divider, footers */
+
+  /* ============================================================
+     COLOR — Semantic status (deltas in dashboards)
+     ============================================================ */
+  --positive:        #2F7D3B;
+  --positive-bg:     #D9EFDF;
+  --negative:        #C03036;
+  --negative-bg:     #FBD9DC;
+
+  /* ============================================================
+     TYPE — Family
+     ============================================================ */
+  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Montserrat', sans-serif; /* same family, used at light weights */
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* ============================================================
+     TYPE — Scale (px, modular-ish)
+     ============================================================ */
+  --fs-12: 0.75rem;
+  --fs-13: 0.8125rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
+  --fs-32: 2rem;
+  --fs-40: 2.5rem;
+  --fs-48: 3rem;
+  --fs-56: 3.5rem;
+  --fs-72: 4.5rem;
+
+  /* Weight */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  /* Line heights */
+  --lh-tight: 1.1;
+  --lh-snug: 1.25;
+  --lh-normal: 1.5;
+  --lh-loose: 1.7;
+
+  /* ============================================================
+     SPACING
+     ============================================================ */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-20: 80px;
+  --sp-24: 96px;
+  --sp-32: 128px;
+
+  /* ============================================================
+     RADII
+     ============================================================ */
+  --r-1: 4px;     /* buttons, inputs */
+  --r-2: 8px;     /* cards (subtle) */
+  --r-3: 12px;    /* cards (default) */
+  --r-4: 16px;
+  --r-pill: 999px;
+  --r-logo-mark: 22%; /* the Adium "U" rounded-square */
+
+  /* ============================================================
+     SHADOWS
+     ============================================================ */
+  --shadow-1: 0 1px 2px rgba(15, 23, 42, 0.04), 0 1px 1px rgba(15, 23, 42, 0.03);
+  --shadow-2: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-inset: inset 0 0 0 1px var(--adium-line);
+
+  /* ============================================================
+     LAYOUT
+     ============================================================ */
+  --container-max: 1280px;
+  --header-h: 88px;
+  --slide-w: 1920px;
+  --slide-h: 1080px;
+  --slide-pad: 80px;
+
+  /* ============================================================
+     MOTION
+     ============================================================ */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-std: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur-base: 200ms;
+  --dur-slow: 300ms;
+}
+
+/* ==========================================================================
+   Semantic element defaults — opt-in by adding class `adium` to your root.
+   ========================================================================== */
+.adium {
+  font-family: var(--font-sans);
+  color: var(--fg-1);
+  background: var(--bg-1);
+  font-size: var(--fs-16);
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.adium h1, .adium .h1 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-48);
+  line-height: var(--lh-tight);
+  letter-spacing: -0.01em;
+  color: var(--fg-1);
+  margin: 0 0 var(--sp-4);
+}
+
+.adium h2, .adium .h2 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-32);
+  line-height: var(--lh-snug);
+  letter-spacing: -0.005em;
+  color: var(--fg-1);
+  margin: 0 0 var(--sp-3);
+}
+
+.adium h3, .adium .h3 {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-24);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+  margin: 0 0 var(--sp-3);
+}
+
+.adium h4, .adium .h4 {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-20);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+  margin: 0 0 var(--sp-2);
+}
+
+.adium .display {
+  font-weight: var(--fw-light);
+  font-size: var(--fs-72);
+  letter-spacing: -0.02em;
+  line-height: var(--lh-tight);
+}
+
+.adium .eyebrow {
+  font-size: var(--fs-13);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--adium-red);
+}
+
+.adium p, .adium .body {
+  font-size: var(--fs-16);
+  line-height: var(--lh-normal);
+  color: var(--fg-2);
+  margin: 0 0 var(--sp-4);
+  text-wrap: pretty;
+}
+
+.adium .lead {
+  font-size: var(--fs-20);
+  line-height: 1.55;
+  color: var(--fg-2);
+}
+
+.adium .caption {
+  font-size: var(--fs-13);
+  color: var(--fg-3);
+  line-height: var(--lh-snug);
+}
+
+.adium .mono {
+  font-family: var(--font-mono);
+  font-size: var(--fs-14);
+}
+
+.adium a {
+  color: var(--fg-link);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+.adium a:hover { color: var(--adium-red-hover); }
+
+/* Slide-divider helper — slate bg, white outline mark, red footer */
+.adium .slide-divider {
+  background: var(--bg-deep);
+  color: var(--fg-on-slate);
+  position: relative;
+  overflow: hidden;
+}
+.adium .slide-divider::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 32px;
+  background: var(--adium-red);
+}
